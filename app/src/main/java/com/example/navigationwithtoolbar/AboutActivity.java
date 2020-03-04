@@ -20,3 +20,4 @@ public class AboutActivity extends AppCompatActivity {
 
     }
 }
+//this is new line
