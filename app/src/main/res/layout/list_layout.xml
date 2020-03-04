@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/card_view_background"
+        android:layout_margin="5dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="8dp">
+
+
+            <TextView
+                android:id="@+id/companyName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:textColor="@color/design_default_color_primary_variant"
+                android:text="Apple MacBook Air Core i5 5th Gen - (8 GB/128 GB SSD/Mac OS Sierra)"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+                android:textSize="20sp" />
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/code"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="5dp"
+
+                >
+                <TextView
+                    android:id="@+id/price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="INR 56990"
+                    style="@style/TextAppearance.AppCompat.Headline"
+                    android:textStyle="bold" />
+                <TextView
+                    android:id="@+id/status"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@color/colorPrimary"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_gravity="right"
+                    android:text="strong buy"
+                    android:textColor="@color/price"
+                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Small.Inverse"
+                    android:textStyle="bold" />
+
+            </FrameLayout>
+
+            <TextView
+                android:id="@+id/code"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="5dp"
+                android:text="Code"
+                android:textSize="16sp"
+                android:textColor="@color/iconColor"
+                android:layout_below="@+id/companyName"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+                android:textStyle="bold" />
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</FrameLayout>

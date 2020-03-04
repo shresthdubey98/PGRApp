@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SignUp"
+    android:background="@drawable/bg_border_green"
+
+    >
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/signup_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white"
+        android:elevation="5dp"
+        app:logo="@drawable/ic_arrow_back"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:title="Register"
+        app:titleMarginStart="30dp" />
+
+
+    <ScrollView
+        app:layout_constraintTop_toBottomOf="@+id/signup_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <EditText
+                android:id="@+id/etrname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/black_textview_bg"
+                android:elevation="5dp"
+                android:ems="10"
+                android:hint="Enter Name"
+                android:inputType="text"
+                android:padding="10dp"
+                android:textAlignment="center"
+                android:textColor="#FFFFFF"
+                android:textColorHint="#BCFFF9F9"
+                android:textColorLink="#00574B" />
+
+            <EditText
+                android:id="@+id/etremail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/black_textview_bg"
+                android:elevation="5dp"
+                android:ems="10"
+                android:hint="Enter Email"
+                android:inputType="textEmailAddress"
+                android:padding="10dp"
+                android:textAlignment="center"
+                android:textColor="#FFFFFF"
+                android:textColorHint="#BCFFF9F9"
+                android:textColorLink="#00574B" />
+
+            <EditText
+                android:id="@+id/etrphone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/black_textview_bg"
+                android:digits="0123456789"
+                android:elevation="5dp"
+                android:ems="13"
+                android:hint="Enter your phone number"
+                android:inputType="phone"
+                android:maxLength="10"
+                android:padding="10dp"
+                android:textAlignment="center"
+                android:textColor="#FFFFFF"
+                android:textColorHint="#BCFFF9F9"
+                android:textColorLink="#00574B" />
+            <RadioGroup
+                android:id="@+id/maleFemale"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_horizontal"
+
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:padding="10dp"
+                    android:text="Gender"
+                    android:textColor="#000000"
+                    android:textSize="22sp" />
+
+                <RadioButton
+                    android:id="@+id/radioButton9"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_weight="1"
+                    android:text="Male" />
+
+                <RadioButton
+                    android:id="@+id/radioButton10"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Female" />
+            </RadioGroup>
+            <RadioGroup
+                android:id="@+id/pimpvt"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_horizontal"
+
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:padding="10dp"
+                    android:text="Access"
+                    android:textColor="#000000"
+                    android:textSize="22sp" />
+
+                <RadioButton
+                    android:id="@+id/radiopim"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="1"
+                    android:text="PIM" />
+
+                <RadioButton
+                    android:id="@+id/radioboth"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginRight="10dp"
+
+                    android:text="PVT" />
+                <RadioButton
+                    android:id="@+id/radiopvt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="both" />
+            </RadioGroup>
+            <TextView
+                android:id="@+id/selectDate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_weight="1"
+                android:padding="10dp"
+                android:text="Select Date of Birth"
+                style="@style/TextAppearance.AppCompat.Headline"
+                android:textSize="22sp" />
+
+            <EditText
+                android:id="@+id/etrpassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/black_textview_bg"
+                android:elevation="5dp"
+                android:ems="10"
+                android:hint="Set a password"
+                android:inputType="textPassword"
+                android:maxLength="16"
+                android:padding="10dp"
+                android:textAlignment="center"
+                android:textColor="#FFFFFF"
+                android:textColorHint="#BCFFF9F9"
+                android:textColorLink="#00574B" />
+
+            <EditText
+                android:id="@+id/etrconfirmpassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginBottom="15dp"
+                android:background="@drawable/black_textview_bg"
+                android:elevation="5dp"
+                android:ems="10"
+                android:hint="Confirm password"
+                android:inputType="textPassword"
+                android:padding="10dp"
+                android:textAlignment="center"
+                android:textColor="#FFFFFF"
+                android:textColorHint="#BCFFF9F9"
+                android:textColorLink="#00574B" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btnRSignup"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sign Up"
+                android:theme="@style/ThemeOverlay.AppCompat.Dark"
+                android:layout_marginTop="20dp"
+                android:layout_gravity="center_horizontal"
+                android:textColor="@color/design_default_color_surface"
+                />
+        </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:elevation="20dp"
+    android:orientation="vertical">
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/card_view_background"
+        android:layout_margin="5dp">
+            <LinearLayout
+                android:id="@+id/name_linear_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:id="@+id/sno"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#373737"
+                    android:text="SNo."
+                    android:layout_gravity="center_vertical"
+                    android:layout_margin="5dp"
+                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+                    android:textSize="20sp" />
+                <TextView
+                    android:id="@+id/module_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:textColor="@color/design_default_color_primary_variant"
+                    android:text="Apple MacBook Air Core i5 5th Gen - (8 GB/128 GB SSD/Mac OS Sierra)"
+                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+                    android:textSize="18sp" />
+            </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+</FrameLayout>

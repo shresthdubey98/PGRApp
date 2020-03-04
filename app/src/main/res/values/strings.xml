@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">Praedico Portfolio Manager</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="about">Praedico Portfolio Manager is designed for those who wants to learn the<b> portfolio management</b> and <b>funds management</b>. It allows you to do the dummy trading without investing a single penny. Praedico Portfolio Manager will also gives the advices on each stock along with dummy trading option. By practicing Praedico Portfolio Manager user will get knowledge about good stocks so that they can make more and more profit while doing the live trading. Praedico’s portfolio manager allows you to learn the management of portfolio and funds. As portfolio management and funds management are the most upcoming<b> hot job fields</b>. One can learn the management of portfolio and funds without investing and losing a single money. Also our portfolio manager provides a leader board where others can know how to manage the effective portfolio with the help of the best one. In all aspects our portfolio manager gives you an extra skill in your hands segregating you from the herd.</string>
+
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string-array name="filter">
+        <item>All</item>
+        <item>Strong Buy</item>
+        <item>Strong Sell</item>
+        <item>Buy</item>
+        <item>Sell</item>
+    </string-array>
+</resources>

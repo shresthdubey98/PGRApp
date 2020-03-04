@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@color/bg"
+    android:padding="20dp"
+    >
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_height="wrap_content"
+        android:text="SELL STOCK"
+        style="@style/TextAppearance.AppCompat.Headline"
+        android:textSize="20sp"
+        android:textColor="@color/price"
+        android:textStyle="bold"
+        />
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="start"
+        android:layout_marginTop="30dp">
+        <TextView
+            android:id="@+id/SellDialogCompanyName"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:text="Demo Company name that is very big in size"
+
+            style="@style/TextAppearance.AppCompat.Headline"
+            android:textSize="16sp"
+            android:textColor="@color/companyName"
+            />
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/SADcompanyCode"
+                android:layout_width="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_height="wrap_content"
+                android:text="ADANI-PORTS"
+                style="@style/TextAppearance.AppCompat.Headline"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:textColor="@color/companyName"
+                />
+            <TextView
+                android:id="@+id/sellDialogCurrentPrice"
+                android:layout_width="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_height="wrap_content"
+                android:text="INR 420.00"
+                android:layout_marginTop="5dp"
+                style="@style/TextAppearance.AppCompat.Headline"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:textColor="@color/price"
+                />
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="start"
+        android:layout_marginTop="20dp"
+        >
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+
+            <TextView
+                android:id="@+id/textview9"
+                android:layout_width="140sp"
+                android:layout_marginRight="10dp"
+                android:layout_height="wrap_content"
+                android:text="Available Stocks:"
+                style="@style/TextAppearance.AppCompat.Headline"
+                android:textSize="16sp"
+                android:textColor="@color/values"
+                />
+            <TextView
+                android:id="@+id/SADAvailableStocks"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="20"
+                style="@style/TextAppearance.AppCompat.Headline"
+                android:textSize="16sp"
+                android:textColor="@color/price"
+                />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal"
+        android:layout_gravity="start">
+
+        <TextView
+            android:id="@+id/textview5"
+            android:layout_width="140sp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:text="Sell Quantity"
+            style="@style/TextAppearance.AppCompat.Headline"
+            android:textSize="16sp"
+            android:textColor="@color/values"
+            />
+        <EditText
+            android:id="@+id/SADSellNumber"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:textColor="@color/values"
+            android:textColorHint="@color/values"
+            android:hint="Number of Stocks"
+            android:inputType="number"
+            android:backgroundTint="@color/companyName"
+            android:textSize="14sp"
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="start"
+        android:layout_marginTop="40dp"
+        >
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+
+            <TextView
+                android:id="@+id/textview6"
+                android:layout_width="140sp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:text="Total Sell Amount:"
+                style="@style/TextAppearance.AppCompat.Headline"
+                android:textSize="16sp"
+                android:textColor="@color/values"
+                />
+            <TextView
+                android:id="@+id/sellAmount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="INR 0"
+                style="@style/TextAppearance.AppCompat.Headline"
+                android:textSize="16sp"
+                android:textColor="@color/price"
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal"
+            >
+
+            <TextView
+                android:id="@+id/textview7"
+                android:layout_marginRight="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Avilable Balance"
+                style="@style/TextAppearance.AppCompat.Headline"
+                android:textSize="16sp"
+                android:textColor="@color/values"
+                />
+            <TextView
+                android:id="@+id/sellDAviBalance"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="INR 0"
+                style="@style/TextAppearance.AppCompat.Headline"
+                android:textSize="16sp"
+                android:textColor="@android:color/holo_green_light"
+                />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_gravity="end"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="100dp"
+        >
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnSADCancle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cancle"
+            android:textColor="@color/companyName"
+            android:theme="@style/ThemeOverlay.AppCompat.Dark"
+            />
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnSADSell"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sell"
+            android:textColor="@color/companyName"
+            android:theme="@style/ThemeOverlay.AppCompat.Dark"
+            />
+    </LinearLayout>
+</LinearLayout>

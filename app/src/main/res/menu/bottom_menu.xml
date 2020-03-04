@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/homeFragment"
+        android:title="Home"
+        android:icon="@drawable/ic_home_black_24dp"
+        />
+    <item
+        android:id="@+id/portfolioFragment"
+        android:title="Portfolio"
+        android:icon="@drawable/ic_credit_card_black_24dp"
+        />
+    <item
+        android:id="@+id/watchlistFragment"
+        android:title="Watchlist"
+        android:icon="@drawable/ic_remove_red_eye_black_24dp"
+        />
+</menu>

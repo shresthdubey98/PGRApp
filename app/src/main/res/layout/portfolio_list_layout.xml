@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/card_view_background"
+        android:layout_margin="5dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="8dp">
+
+
+            <TextView
+                android:id="@+id/companyName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:text="Apple MacBook Air Core i5 5th Gen - (8 GB/128 GB SSD/Mac OS Sierra)"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+                android:textColor="@color/design_default_color_primary_variant"
+                android:textSize="18sp" />
+
+            <FrameLayout
+                android:id="@+id/frameINRandSTATUS"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/code"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="5dp"
+
+                >
+                <TextView
+                    android:id="@+id/price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="INR 56990"
+                    android:textSize="14sp"
+                    android:textColor="@color/INR"
+                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+                    android:textStyle="bold" />
+                <TextView
+                    android:id="@+id/status"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@color/colorPrimary"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_gravity="right"
+                    android:text="strong buy"
+                    android:textColor="@color/price"
+                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Small.Inverse"
+                    android:textStyle="bold" />
+
+            </FrameLayout>
+            <FrameLayout
+                android:id="@+id/aviAndWorth"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/frameINRandSTATUS"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="5dp">
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/textView1"
+                        style="@style/TextAppearance.AppCompat.Headline"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Avi: "
+                        android:textColor="#4D4D4D"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:id="@+id/portAvi"
+                        style="@style/TextAppearance.AppCompat.Headline"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_toRightOf="@id/textView1"
+                        android:text="20"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+                </RelativeLayout>
+                <RelativeLayout
+                    android:layout_gravity="end"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/textView2"
+                        style="@style/TextAppearance.AppCompat.Headline"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Worth: "
+                        android:textColor="#4D4D4D"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:id="@+id/portWorth"
+                        style="@style/TextAppearance.AppCompat.Headline"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_toRightOf="@id/textView2"
+                        android:text="20/-"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+                </RelativeLayout>
+
+            </FrameLayout>
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/aviAndWorth"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="5dp">
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/textView3"
+                        style="@style/TextAppearance.AppCompat.Headline"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Investment: "
+                        android:textColor="#4D4D4D"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:id="@+id/investment"
+                        style="@style/TextAppearance.AppCompat.Headline"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="false"
+                        android:layout_toRightOf="@id/textView3"
+                        android:text="20"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+                </RelativeLayout>
+                <RelativeLayout
+                    android:layout_gravity="end"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/textView4"
+                        style="@style/TextAppearance.AppCompat.Headline"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Position: "
+                        android:textColor="#4D4D4D"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:id="@+id/position"
+                        style="@style/TextAppearance.AppCompat.Headline"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_toRightOf="@id/textView4"
+                        android:text="20/-"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+                </RelativeLayout>
+
+            </FrameLayout>
+
+            <TextView
+                android:id="@+id/code"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/companyName"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="5dp"
+                android:text="Code"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+                android:textColor="@color/iconColor"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</FrameLayout>

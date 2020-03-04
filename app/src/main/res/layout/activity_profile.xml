@@ -1,0 +1,288 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ProfileActivity"
+    >
+
+
+
+
+    <FrameLayout
+        android:background="@android:color/holo_blue_light"
+        android:id="@+id/frameLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/profile_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/white"
+            android:elevation="5dp"
+            app:logo="@drawable/ic_arrow_back"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:title="Profile"
+            app:titleMarginStart="30dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="50dp"
+            android:orientation="vertical"
+            app:layout_constraintTop_toBottomOf="@+id/profile_toolbar">
+
+
+            <FrameLayout
+                android:background="@drawable/bg_border"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="20dp"
+                >
+
+                <TextView
+
+                    android:id="@+id/profile_name"
+                    style="@style/TextAppearance.AppCompat.Headline"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="15dp"
+                    android:padding="10dp"
+                    android:text="demo name"
+                    android:textColor="#FFFFFF"
+                    android:textSize="24sp"
+                    android:textStyle="bold" />
+            </FrameLayout>
+
+
+            <TextView
+                style="@style/TextAppearance.AppCompat.Headline"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text="Email"
+                android:layout_marginTop="20dp"
+                android:textColor="#FFFFFF"
+                android:textSize="18sp"
+                android:textStyle="bold|italic" />
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="10dp"
+                android:layout_marginVertical="10dp"
+                android:background="@drawable/profile_view_background"
+                android:elevation="5dp"
+                android:paddingHorizontal="16dp"
+                android:paddingVertical="10dp">
+
+                <EditText
+                    android:id="@+id/profile_email"
+                    style="@style/TextAppearance.AppCompat.Headline"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:enabled="false"
+                    android:background="@color/noColor"
+                    android:text="demo@gmail.com"
+                    android:textColor="#00534F"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+            </FrameLayout>
+
+            <TextView
+                style="@style/TextAppearance.AppCompat.Headline"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text="Phone"
+                android:textColor="#FFFFFF"
+                android:textSize="18sp"
+                android:textStyle="bold|italic" />
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="10dp"
+                android:layout_marginVertical="10dp"
+                android:background="@drawable/profile_view_background"
+                android:elevation="5dp"
+                android:paddingHorizontal="20dp"
+                android:paddingVertical="10dp">
+
+                <EditText
+                    android:id="@+id/profile_phone"
+                    style="@style/TextAppearance.AppCompat.Headline"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:background="@color/noColor"
+                    android:enabled="false"
+                    android:inputType="phone"
+                    android:maxLength="10"
+                    android:text="1234567890"
+                    android:textColor="#00534F"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <ImageButton
+                    android:id="@+id/edit_phone"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:background="@android:color/white"
+                    android:src="@drawable/ic_edit"
+                    android:layout_gravity="end"/>
+                <ImageButton
+                    android:id="@+id/confirm_edit_phone"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:background="@android:color/white"
+                    android:visibility="gone"
+                    android:src="@drawable/ic_check"
+                    android:layout_gravity="end"/>
+
+            </FrameLayout>
+
+            <TextView
+                style="@style/TextAppearance.AppCompat.Headline"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text="Date of Birth"
+                android:textColor="#FFFFFF"
+                android:textSize="18sp"
+                android:textStyle="bold|italic" />
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="10dp"
+                android:layout_marginVertical="10dp"
+                android:background="@drawable/profile_view_background"
+                android:elevation="5dp"
+                android:paddingHorizontal="20dp"
+                android:paddingVertical="10dp">
+
+                <EditText
+                    android:enabled="false"
+                    android:id="@+id/profile_dob"
+                    style="@style/TextAppearance.AppCompat.Headline"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="start"
+                    android:background="@color/noColor"
+                    android:text="31/Oct/1998"
+                    android:textColor="#00534F"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+                <ImageButton
+                    android:id="@+id/edit_dob"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:background="@android:color/white"
+                    android:src="@drawable/ic_edit"
+                    android:layout_gravity="end"/>
+
+
+            </FrameLayout>
+
+            <TextView
+                style="@style/TextAppearance.AppCompat.Headline"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text="Password"
+                android:textColor="#FFFFFF"
+                android:textSize="18sp"
+                android:textStyle="bold|italic" />
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="10dp"
+                android:layout_marginVertical="10dp"
+                android:background="@drawable/profile_view_background"
+                android:elevation="5dp"
+                android:paddingHorizontal="20dp"
+                android:paddingVertical="10dp">
+
+                <TextView
+                    android:id="@+id/profile_password"
+                    style="@style/TextAppearance.AppCompat.Headline"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="start"
+                    android:background="@color/noColor"
+                    android:enabled="false"
+                    android:inputType="textPassword"
+                    android:text="1234567890"
+                    android:textColor="#00534F"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+                <ImageButton
+                    android:id="@+id/edit_password"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:background="@android:color/white"
+                    android:src="@drawable/ic_edit"
+                    android:layout_gravity="end"/>
+
+            </FrameLayout>
+
+            <TextView
+                style="@style/TextAppearance.AppCompat.Headline"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text="Gender"
+                android:textColor="#FFFFFF"
+                android:textSize="18sp"
+                android:textStyle="bold|italic" />
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="10dp"
+                android:layout_marginVertical="10dp"
+                android:background="@drawable/profile_view_background"
+                android:elevation="5dp"
+                android:paddingHorizontal="20dp"
+                android:paddingVertical="10dp">
+
+                <EditText
+                    android:id="@+id/profile_gender"
+                    style="@style/TextAppearance.AppCompat.Headline"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="start"
+                    android:background="@color/noColor"
+                    android:enabled="false"
+                    android:text="whatever"
+                    android:textColor="#00534F"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+                <ImageButton
+                    android:id="@+id/edit_gender"
+                    android:layout_width="20dp"
+                    android:background="@android:color/white"
+                    android:layout_height="20dp"
+                    android:visibility="gone"
+                    android:src="@drawable/ic_edit"
+                    android:layout_gravity="end"/>
+
+            </FrameLayout>
+
+        </LinearLayout>
+
+    </FrameLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

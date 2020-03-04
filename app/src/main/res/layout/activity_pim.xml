@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/constraintLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    >
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:id="@+id/pim_progressbar"
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_gravity="center"
+            android:visibility="gone"
+            android:layout_height="wrap_content"
+            >
+            <ProgressBar
+                android:layout_gravity="center_horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Please wait !" />
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/pim_auth_failed"
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:visibility="gone"
+            android:layout_gravity="center"
+            android:layout_height="wrap_content"
+            >
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/ic_auth_failed"
+                android:layout_gravity="center_horizontal"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:textColor="@android:color/holo_red_dark"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+                android:text="Sorry !\nYou are not authorized for PIM !" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/pim_activity_toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/white"
+                android:elevation="5dp"
+                app:logo="@drawable/ic_arrow_back"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:title="PIM"
+                app:titleMarginStart="30dp" />
+
+            <TextView
+                android:id="@+id/list_of_modules_textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="List of Modules"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginVertical="10dp"
+                style="@style/TextAppearance.AppCompat.Headline"
+                />
+
+
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/pimRecyclerView"
+                android:layout_width="match_parent"
+                android:visibility="visible"
+                android:layout_height="match_parent"
+                android:layout_gravity="top"
+                tools:listitem="@layout/pim_card_layout">
+            </androidx.recyclerview.widget.RecyclerView>
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/pim_network_error"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_gravity="center_horizontal"
+                android:background="@drawable/ic_network_error"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Network Error!"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+    </FrameLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

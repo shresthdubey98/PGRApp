@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#97001E</color>
+    <color name="colorPrimaryDark">#192700</color>
+    <color name="colorAccent">#797979</color>
+    <color name="iconColor">#383838</color>
+    <color name="strongBuy">#00CC00</color>
+    <color name="buy">#005100</color>
+    <color name="sell">#660000</color>
+    <color name="strongSell">#CC0000</color>
+    <color name="neutral">#0454D5</color>
+    <color name="cardView">#FFD8FA</color>
+    <color name="buttonBackground">#000000</color>
+    <color name="bg">#424242</color>
+    <color name="companyName">#FFE400</color>
+    <color name="price">#FFFFFF</color>
+    <color name="buyPrice">#67AEE6</color>
+    <color name="values">#67AEE6</color>
+    <color name="debit">#3BF828</color>
+    <color name="noColor">#00FFFFFF</color>
+    <color name="INR">#FF00776B</color>
+
+
+</resources>
